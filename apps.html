@@ -1,203 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Biblica Apps</title>
   <style>
-    body {
+    body{
       font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 20px;
-      background: #f9f9f9;
+      background:#f9f9f9;
+      margin:0; padding:24px;
     }
-    h1 {
-      margin-bottom: 30px;
+    h1{ text-align:center; margin:0 0 24px; color:#333; }
+    .grid{
+      max-width:1200px; margin:0 auto;
+      display:grid; gap:20px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
+    .card{
+      background:#fff; border-radius:12px; padding:16px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.08);
+      text-align:center;
     }
-    .app-card {
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      padding: 20px;
-      text-align: left;
+    .card h3{ margin:6px 0 12px; color:#222; }
+    .qr{
+      width:150px; height:150px; object-fit:contain; margin:4px 0 10px;
     }
-    .app-card h3 {
-      margin-bottom: 15px;
-      text-align: center;
+    .store-link{
+      display:inline-flex; align-items:center; gap:8px;
+      text-decoration:none; font-weight:700;
+      color:#0b66e4; margin:4px 8px; white-space:nowrap;
     }
-    .app-card a {
-      display: block;
-      margin: 8px 0;
-      text-decoration: none;
-      color: #0073e6;
-      font-weight: bold;
-    }
-    .app-card img {
-      width: 20px;
-      vertical-align: middle;
-      margin-right: 8px;
-    }
+    .store-link:hover{ color:#084db0; }
+    .store-icon{ width:20px; height:20px; }
   </style>
 </head>
 <body>
   <h1>Biblica Mobile Apps</h1>
+
   <div class="grid">
 
     <!-- Marathi -->
-    <div class="app-card">
+    <div class="card">
       <h3>Marathi</h3>
-      <a href="https://play.google.com/store/apps/details?id=com.biblica.marathi" target="_blank">
-        <img src="google-play-icon.png" alt="Google Play"> Google Play
-      </a>
-      <a href="https://apps.apple.com/us/app/marathi-contemporary-bible/id6443559981" target="_blank">
-        <img src="apple-icon.png" alt="App Store"> App Store
-      </a>
+      <img class="qr" src="marathi_qr.png" alt="Marathi QR Code" />
+      <div>
+        <a class="store-link" href="https://play.google.com/store/apps/details?id=com.biblica.marathi" target="_blank" rel="noopener">
+          <img class="store-icon" src="google-play-icon.png" alt="Google Play" />Open in Google Play
+        </a>
+        <a class="store-link" href="https://apps.apple.com/us/app/marathi-contemporary-bible/id6443559981" target="_blank" rel="noopener">
+          <img class="store-icon" src="apple-icon.png" alt="App Store" />Open in App Store
+        </a>
+      </div>
     </div>
 
     <!-- Hindi -->
-    <div class="app-card">
+    <div class="card">
       <h3>Hindi</h3>
-      <a href="https://play.google.com/store/apps/details?id=com.biblica.hindi" target="_blank">
-        <img src="google-play-icon.png" alt="Google Play"> Google Play
-      </a>
-      <a href="https://apps.apple.com/us/app/%E0%A4%B9-%E0%A4%A6-%E0%A4%B8%E0%A4%AE%E0%A4%95-%E0%A4%B2-%E0%A4%A8-%E0%A4%B8-%E0%A4%B8-%E0%A4%95%E0%A4%B0%E0%A4%A3/id1614692942" target="_blank">
-        <img src="apple-icon.png" alt="App Store"> App Store
-      </a>
+      <img class="qr" src="hindi_qr.png" alt="Hindi QR Code" />
+      <div>
+        <a class="store-link" href="https://play.google.com/store/apps/details?id=com.biblica.hindi" target="_blank" rel="noopener">
+          <img class="store-icon" src="google-play-icon.png" alt="Google Play" />Open in Google Play
+        </a>
+        <a class="store-link" href="https://apps.apple.com/us/app/%E0%A4%B9-%E0%A4%A6-%E0%A4%B8%E0%A4%AE%E0%A4%95-%E0%A4%B2-%E0%A4%A8-%E0%A4%B8-%E0%A4%B8-%E0%A4%95%E0%A4%B0%E0%A4%A3/id1614692942" target="_blank" rel="noopener">
+          <img class="store-icon" src="apple-icon.png" alt="App Store" />Open in App Store
+        </a>
+      </div>
     </div>
 
     <!-- English -->
-    <div class="app-card">
+    <div class="card">
       <h3>English</h3>
-      <a href="https://play.google.com/store/apps/details?id=com.biblica.bible" target="_blank">
-        <img src="google-play-icon.png" alt="Google Play"> Google Play
-      </a>
-      <a href="https://apps.apple.com/us/app/biblica-bible/id6459473971" target="_blank">
-        <img src="apple-icon.png" alt="App Store"> App Store
-      </a>
+      <img class="qr" src="english_qr.png" alt="English QR Code" />
+      <div>
+        <a class="store-link" href="https://play.google.com/store/apps/details?id=com.biblica.bible" target="_blank" rel="noopener">
+          <img class="store-icon" src="google-play-icon.png" alt="Google Play" />Open in Google Play
+        </a>
+        <a class="store-link" href="https://apps.apple.com/us/app/biblica-bible/id6459473971" target="_blank" rel="noopener">
+          <img class="store-icon" src="apple-icon.png" alt="App Store" />Open in App Store
+        </a>
+      </div>
     </div>
 
     <!-- Chhattisghari -->
-    <div class="app-card">
+    <div class="card">
       <h3>Chhattisghari</h3>
-      <a href="https://play.google.com/store/apps/details?id=com.biblica.chhattisghari" target="_blank">
-        <img src="google-play-icon.png" alt="Google Play"> Google Play
-      </a>
-      <a href="https://apps.apple.com/app/chhattisghari-bible/id6458187319" target="_blank">
-        <img src="apple-icon.png" alt="App Store"> App Store
-      </a>
+      <img class="qr" src="chhattisghari_qr.png" alt="Chhattisghari QR Code" />
+      <div>
+        <a class="store-link" href="https://play.google.com/store/apps/details?id=com.biblica.chhattisghari" target="_blank" rel="noopener">
+          <img class="store-icon" src="google-play-icon.png" alt="Google Play" />Open in Google Play
+        </a>
+        <a class="store-link" href="https://apps.apple.com/app/chhattisghari-bible/id6458187319" target="_blank" rel="noopener">
+          <img class="store-icon" src="apple-icon.png" alt="App Store" />Open in App Store
+        </a>
+      </div>
     </div>
 
     <!-- Nepali -->
-    <div class="app-card">
+    <div class="card">
       <h3>Nepali</h3>
-      <a href="https://play.google.com/store/apps/details?id=com.biblica.nepali" target="_blank">
-        <img src="google-play-icon.png" alt="Google Play"> Google Play
-      </a>
-      <a href="https://apps.apple.com/app/nepali-bible/id6453520673" target="_blank">
-        <img src="apple-icon.png" alt="App Store"> App Store
-      </a>
+      <img class="qr" src="nepali_qr.png" alt="Nepali QR Code" />
+      <div>
+        <a class="store-link" href="https://play.google.com/store/apps/details?id=com.biblica.nepali" target="_blank" rel="noopener">
+          <img class="store-icon" src="google-play-icon.png" alt="Google Play" />Open in Google Play
+        </a>
+        <a class="store-link" href="https://apps.apple.com/app/nepali-bible/id6453520673" target="_blank" rel="noopener">
+          <img class="store-icon" src="apple-icon.png" alt="App Store" />Open in App Store
+        </a>
+      </div>
     </div>
 
     <!-- Tamil Sri Lankan -->
-    <div class="app-card">
+    <div class="card">
       <h3>Tamil Sri Lankan</h3>
-      <a href="https://play.google.com/store/apps/details?id=com.biblica.tamilsrilankan" target="_blank">
-        <img src="google-play-icon.png" alt="Google Play"> Google Play
-      </a>
-      <a href="https://apps.apple.com/us/app/tamil-sri-lankan-bible/id6450748318" target="_blank">
-        <img src="apple-icon.png" alt="App Store"> App Store
-      </a>
+      <img class="qr" src="tamil_sri_lankan_qr.png" alt="Tamil Sri Lankan QR Code" />
+      <div>
+        <a class="store-link" href="https://play.google.com/store/apps/details?id=com.biblica.tamilsrilankan" target="_blank" rel="noopener">
+          <img class="store-icon" src="google-play-icon.png" alt="Google Play" />Open in Google Play
+        </a>
+        <a class="store-link" href="https://apps.apple.com/us/app/tamil-sri-lankan-bible/id6450748318" target="_blank" rel="noopener">
+          <img class="store-icon" src="apple-icon.png" alt="App Store" />Open in App Store
+        </a>
+      </div>
     </div>
 
     <!-- Telugu -->
-    <div class="app-card">
+    <div class="card">
       <h3>Telugu</h3>
-      <a href="https://play.google.com/store/apps/details?id=com.biblica.telugu" target="_blank">
-        <img src="google-play-icon.png" alt="Google Play"> Google Play
-      </a>
-      <a href="https://apps.apple.com/us/app/telugu-contemporary-bible/id6450741684" target="_blank">
-        <img src="apple-icon.png" alt="App Store"> App Store
-      </a>
+      <img class="qr" src="telugu_qr.png" alt="Telugu QR Code" />
+      <div>
+        <a class="store-link" href="https://play.google.com/store/apps/details?id=com.biblica.telugu" target="_blank" rel="noopener">
+          <img class="store-icon" src="google-play-icon.png" alt="Google Play" />Open in Google Play
+        </a>
+        <a class="store-link" href="https://apps.apple.com/us/app/telugu-contemporary-bible/id6450741684" target="_blank" rel="noopener">
+          <img class="store-icon" src="apple-icon.png" alt="App Store" />Open in App Store
+        </a>
+      </div>
     </div>
 
     <!-- Tamil -->
-    <div class="app-card">
+    <div class="card">
       <h3>Tamil</h3>
-      <a href="https://play.google.com/store/apps/details?id=com.biblica.tamil" target="_blank">
-        <img src="google-play-icon.png" alt="Google Play"> Google Play
-      </a>
-      <!-- no iOS link for Tamil (not provided) -->
+      <img class="qr" src="tamil_qr.png" alt="Tamil QR Code" />
+      <div>
+        <a class="store-link" href="https://play.google.com/store/apps/details?id=com.biblica.tamil" target="_blank" rel="noopener">
+          <img class="store-icon" src="google-play-icon.png" alt="Google Play" />Open in Google Play
+        </a>
+        <!-- iOS link not provided -->
+      </div>
     </div>
 
     <!-- Kannada -->
-    <div class="app-card">
+    <div class="card">
       <h3>Kannada</h3>
-      <a href="https://play.google.com/store/apps/details?id=com.biblica.kannada" target="_blank">
-        <img src="google-play-icon.png" alt="Google Play"> Google Play
-      </a>
-      <a href="https://apps.apple.com/app/kannada-contemporary-bible/id1669238160" target="_blank">
-        <img src="apple-icon.png" alt="App Store"> App Store
-      </a>
+      <img class="qr" src="kannada_qr.png" alt="Kannada QR Code" />
+      <div>
+        <a class="store-link" href="https://play.google.com/store/apps/details?id=com.biblica.kannada" target="_blank" rel="noopener">
+          <img class="store-icon" src="google-play-icon.png" alt="Google Play" />Open in Google Play
+        </a>
+        <a class="store-link" href="https://apps.apple.com/app/kannada-contemporary-bible/id1669238160" target="_blank" rel="noopener">
+          <img class="store-icon" src="apple-icon.png" alt="App Store" />Open in App Store
+        </a>
+      </div>
     </div>
 
     <!-- Malayalam -->
-    <div class="app-card">
+    <div class="card">
       <h3>Malayalam</h3>
-      <a href="https://play.google.com/store/apps/details?id=com.biblica.malayalam" target="_blank">
-        <img src="google-play-icon.png" alt="Google Play"> Google Play
-      </a>
-      <a href="https://apps.apple.com/app/malayalam-contemporary-bible/id6468354373" target="_blank">
-        <img src="apple-icon.png" alt="App Store"> App Store
-      </a>
+      <img class="qr" src="malayalam_qr.png" alt="Malayalam QR Code" />
+      <div>
+        <a class="store-link" href="https://play.google.com/store/apps/details?id=com.biblica.malayalam" target="_blank" rel="noopener">
+          <img class="store-icon" src="google-play-icon.png" alt="Google Play" />Open in Google Play
+        </a>
+        <a class="store-link" href="https://apps.apple.com/app/malayalam-contemporary-bible/id6468354373" target="_blank" rel="noopener">
+          <img class="store-icon" src="apple-icon.png" alt="App Store" />Open in App Store
+        </a>
+      </div>
     </div>
 
     <!-- Punjabi -->
-    <div class="app-card">
+    <div class="card">
       <h3>Punjabi</h3>
-      <a href="https://play.google.com/store/apps/details?id=com.biblica.punjabi" target="_blank">
-        <img src="google-play-icon.png" alt="Google Play"> Google Play
-      </a>
-      <a href="https://apps.apple.com/us/app/punjabi-contemporary-bible/id6443560195" target="_blank">
-        <img src="apple-icon.png" alt="App Store"> App Store
-      </a>
+      <img class="qr" src="punjabi_qr.png" alt="Punjabi QR Code" />
+      <div>
+        <a class="store-link" href="https://play.google.com/store/apps/details?id=com.biblica.punjabi" target="_blank" rel="noopener">
+          <img class="store-icon" src="google-play-icon.png" alt="Google Play" />Open in Google Play
+        </a>
+        <a class="store-link" href="https://apps.apple.com/us/app/punjabi-contemporary-bible/id6443560195" target="_blank" rel="noopener">
+          <img class="store-icon" src="apple-icon.png" alt="App Store" />Open in App Store
+        </a>
+      </div>
     </div>
 
     <!-- Urdu -->
-    <div class="app-card">
+    <div class="card">
       <h3>Urdu</h3>
-      <a href="https://play.google.com/store/apps/details?id=com.biblica.urdu" target="_blank">
-        <img src="google-play-icon.png" alt="Google Play"> Google Play
-      </a>
-      <a href="https://apps.apple.com/us/app/urdu-bible/id6443560897" target="_blank">
-        <img src="apple-icon.png" alt="App Store"> App Store
-      </a>
+      <img class="qr" src="urdu_qr.png" alt="Urdu QR Code" />
+      <div>
+        <a class="store-link" href="https://play.google.com/store/apps/details?id=com.biblica.urdu" target="_blank" rel="noopener">
+          <img class="store-icon" src="google-play-icon.png" alt="Google Play" />Open in Google Play
+        </a>
+        <a class="store-link" href="https://apps.apple.com/us/app/urdu-bible/id6443560897" target="_blank" rel="noopener">
+          <img class="store-icon" src="apple-icon.png" alt="App Store" />Open in App Store
+        </a>
+      </div>
     </div>
 
     <!-- Bengali -->
-    <div class="app-card">
+    <div class="card">
       <h3>Bengali</h3>
-      <a href="https://play.google.com/store/apps/details?id=com.biblica.bengali" target="_blank">
-        <img src="google-play-icon.png" alt="Google Play"> Google Play
-      </a>
-      <a href="https://apps.apple.com/us/app/bengali-bible/id6443556838" target="_blank">
-        <img src="apple-icon.png" alt="App Store"> App Store
-      </a>
+      <img class="qr" src="bengali_qr.png" alt="Bengali QR Code" />
+      <div>
+        <a class="store-link" href="https://play.google.com/store/apps/details?id=com.biblica.bengali" target="_blank" rel="noopener">
+          <img class="store-icon" src="google-play-icon.png" alt="Google Play" />Open in Google Play
+        </a>
+        <a class="store-link" href="https://apps.apple.com/us/app/bengali-bible/id6443556838" target="_blank" rel="noopener">
+          <img class="store-icon" src="apple-icon.png" alt="App Store" />Open in App Store
+        </a>
+      </div>
     </div>
 
     <!-- Sinhala -->
-    <div class="app-card">
+    <div class="card">
       <h3>Sinhala</h3>
-      <a href="https://play.google.com/store/apps/details?id=com.biblica.sinhala" target="_blank">
-        <img src="google-play-icon.png" alt="Google Play"> Google Play
-      </a>
-      <a href="https://apps.apple.com/us/app/sinhala-contemporary-version/id1614693523" target="_blank">
-        <img src="apple-icon.png" alt="App Store"> App Store
-      </a>
+      <img class="qr" src="sinhala_qr.png" alt="Sinhala QR Code" />
+      <div>
+        <a class="store-link" href="https://play.google.com/store/apps/details?id=com.biblica.sinhala" target="_blank" rel="noopener">
+          <img class="store-icon" src="google-play-icon.png" alt="Google Play" />Open in Google Play
+        </a>
+        <a class="store-link" href="https://apps.apple.com/us/app/sinhala-contemporary-version/id1614693523" target="_blank" rel="noopener">
+          <img class="store-icon" src="apple-icon.png" alt="App Store" />Open in App Store
+        </a>
+      </div>
     </div>
 
   </div>
